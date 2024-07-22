@@ -65,6 +65,8 @@ a {
 }
 
 .hero-wrap {
+    display: flex;
+    align-items: center;
     position: relative;
     background: #e6f0ff;
     height: calc(100vh - 90px);
@@ -109,16 +111,12 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 118px;
-    display: inline-block;
-}
 
-.hero .info {
+.hero-wrap .info {
     width: 50.3%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
@@ -126,7 +124,7 @@ a {
     letter-spacing: 0.018rem;
 }
 
-.hero .title {
+.hero-wrap .title {
     color: #000336;
     font-weight: 700;
     font-size: 6.4rem;
@@ -134,7 +132,7 @@ a {
     margin-top: 8px;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
