@@ -166,8 +166,25 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 96px;
+    margin-top: 60px;
 }
+
+.clients .images a {
+    display: flex;
+    min-width: 240px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 42px;
+    border-radius: 12px;
+}
+
+.clients .images a:hover{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
 
 /* ====== Guides ====== */
 
@@ -570,7 +587,7 @@ a {
 }
 
 .footer .row .heading {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     color: #1c1c1d;
     font-size: 2rem;
     font-weight: 700;
