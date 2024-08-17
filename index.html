@@ -16,6 +16,7 @@
             sizes="60x60"
             href="./assets/favicon/apple-icon-60x60.png"
         />
+
         <link
             rel="apple-touch-icon"
             sizes="72x72"
@@ -101,15 +102,32 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
+        <!--PC header-->
         <header class="fix-header">
             <div class="content">
                 <!-- Navbar -->
                 <nav class="navbar">
+                    <!-- menu -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                     <!-- Logo -->
                     <a href="#"
-                        ><img src="./assets/img/logo.svg" alt="Besnik."
+                        ><img
+                            class="logo"
+                            src="./assets/img/logo.svg"
+                            alt="Besnik."
                     /></a>
 
                     <!-- Navigation -->
@@ -127,6 +145,42 @@
                         <a href="#!" class="btn action-btn">Sign up</a>
                     </div>
                 </nav>
+            </div>
+        </header>
+
+        <!-- Tablet/Mobile header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+
+            <!-- overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- menu content -->
+            <div class="menu-drawer">
+                <a href="#">
+                    <img src="./assets/img/logo.svg" alt="Besnik." />
+                </a>
+
+                <!-- Navigation -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a class="hide-on-tablet separate" href="#contact">Sign in</a>
+                    </li>
+                    <li>
+                        <a class="hide-on-tablet" href="#contact">Sign up</a>
+                    </li>
+                </ul>
             </div>
         </header>
 
@@ -171,7 +225,7 @@
                         <p class="desc">
                             More than 45,000+ companies trust besnik
                         </p>
-                        <p class="desc">5 Star Ratings (2k+ Review)</p>
+                        <p class="desc hide-on-mobile">5 Star Ratings (2k+ Review)</p>
                     </div>
                     <div class="images">
                         <a href="">
@@ -409,6 +463,12 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="view-all hide-on-tablet">
+                        <a href="#!" class="btn">
+                            View All Properties
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -418,13 +478,14 @@
                     <div class="row">
                         <div class="img-block">
                             <img
+                                class="image"
                                 src="./assets/img/stats.jpg"
                                 alt="You’ve found a neighborhood you love."
                             />
 
                             <!-- Trend-->
                             <div class="stats-trend">
-                                <div class="row">
+                                <div class="trend-row">
                                     <strong class="value">40,000+</strong>
                                     <img
                                         src="./assets/img/stats-trend.svg"
@@ -622,9 +683,9 @@
         </main>
 
         <!--  Footer   -->
-        <footer class="footer">
+        <footer class="footer" >
             <div class="content">
-                <div class="row">
+                <div class="row row-top">
                     <!--  Product column   -->
                     <div class="column">
                         <h3 class="heading">Product</h3>
@@ -696,7 +757,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row row-bottom">
                     <img src="./assets/img/logo.svg" alt="" class="logo" />
                     <p class="copyright">
                         Copyright 2020.com, All rights reserved.
