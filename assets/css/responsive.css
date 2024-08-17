@@ -235,6 +235,10 @@
         border-radius: 12px;
     }
 
+    .stats .row {
+        row-gap: 40px;
+    }
+
     .subscription .info {
         padding: 0 40px;
     }
@@ -251,4 +255,5 @@
     .hero-wrap {
         padding-bottom: 90px;
     }
+
 }
